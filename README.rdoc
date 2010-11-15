@@ -27,7 +27,7 @@ Add extension to Test::Unit and ActiveSupport::TestCase
 
 If your model has callback :my_callback on before_create, just check it in your test by :
 
-  class  .... < Test::Unit::TestCase
+  class  .... < ActiveSupport::TestCase
     should_have_callbacks :before_create, :my_callback
   end
 
