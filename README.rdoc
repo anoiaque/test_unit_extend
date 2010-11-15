@@ -7,7 +7,7 @@ Add extension to Test::Unit and ActiveSupport::TestCase
 
 == before_test
 
-class  .... < Test::Unit::TestCase
+  class  .... < Test::Unit::TestCase
 
     before_test :test_me, :setup_for_test_me
 
@@ -21,13 +21,15 @@ class  .... < Test::Unit::TestCase
       @var = "Cup of tea please"
     end
     
-end
+  end
 
 == should_have_callbacks
 
 If your model has callback :my_callback on before_create, just check it in your test by :
 
-  should_have_callbacks :before_create, :my_callback
+  class  .... < Test::Unit::TestCase
+    should_have_callbacks :before_create, :my_callback
+  end
 
 You can also pass an array :
 
@@ -40,5 +42,5 @@ gem install test_unit_extend
 
 == Dependencies
 
-before_test : if you use ActiveSupport::TestCase, it doesn't work with ActiveSupport 3 (In Development)
+If you use ActiveSupport::TestCase, it doesn't work with ActiveSupport 3 (In Development)
 
