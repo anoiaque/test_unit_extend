@@ -1,7 +1,8 @@
 == Overview
-Add extension to Test::Unit.
+Add extension to Test::Unit and ActiveSupport::TestCase
 
-#before_test : do something before lauch a test
+#before_test : do something before lauching a test
+
 #should_have_callbacks : shoulda doesn't have macro to test presence of callbacks, here is one.
 
 == before_test
