@@ -1,7 +1,7 @@
 == Overview
 Add extension to Test::Unit and ActiveSupport::TestCase
 
-#before_test : do something before lauching a test
+#before_test : do something before lauching a test. As with Rspec
 
 #should_have_callbacks : shoulda doesn't have macro to test presence of callbacks, here is one.
 
